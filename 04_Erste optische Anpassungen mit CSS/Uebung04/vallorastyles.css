@@ -1,9 +1,9 @@
 body {
-    font-family: Arial;
+    font: 400 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 p {
-    color: #003366;
+    color: #73564d;
     font-size: 16px;
 }
 
