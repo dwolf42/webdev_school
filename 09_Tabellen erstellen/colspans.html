@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>Spalten verbinden mit colspan</title>
+    <link rel="stylesheet"  href="hotel/stylesheets/vallorastyles.css">
+  </head>
+
+  <body>
+    <h1>Spalten verbinden</h1>
+    <h2>Jede Zeile hat gleich viele Zellen (keine Spalten verbunden)</h2>
+    <table>	
+      <tr>
+        <td>Zelle 1</td>	
+        <td>Zelle 2</td>	
+      </tr>	
+      <tr>	
+        <td>Zelle 3</td>
+        <td>Zelle 4</td>
+      </tr>
+    </table>
+
+    <h2>Zwei verbundene Zellen (colspan 2)</h2>
+    <table>	
+      <tr>	
+        <td >Zelle 1</td>	
+        <td >Zelle 2</td>
+      </tr>	
+      <tr>	
+        <td colspan="2">Zelle 3 und 4 &lt;td colspan="2"&gt;</td>	
+      </tr>	
+    </table>
+
+    <h2>Vier verbundene Zellen (colspan 4)</h2>
+    <table>
+      <tr>
+        <td>Spalte 1</td>
+        <td>Spalte 2</td>
+        <td>Spalte 3</td>
+        <td>Spalte 4</td>
+      </tr>
+      <tr>
+        <td colspan="4">&lt;td colspan="4"&gt;</td>
+      </tr>
+    </table>
+
+    <h2>Zwei mal zwei verbundene Zellen &lt;td colspan="2"&gt;</h2>
+    <table>
+      <tr>
+        <td>Spalte 1</td>
+        <td>Spalte 2</td>
+        <td>Spalte 3</td>
+        <td>Spalte 4</td>
+      </tr>
+      <tr>
+        <td colspan="2">&lt;td colspan="2"&gt;</td>
+        <td colspan="2">&lt;td colspan="2"&gt;</td>
+      </tr>
+    </table>
+
+    <h2>Verbundene Zellen in mehreren Zeilen</h2>  
+    <table>
+      <tr>
+        <td>Spalte 1</td>
+        <td colspan="2">&lt;td colspan="2"&gt;</td>
+        <td>Spalte 4</td>
+      </tr>
+      <tr>
+        <td colspan="2">&lt;td colspan="2"&gt;</td>
+        <td colspan="2">&lt;td colspan="2"&gt;</td>
+      </tr>
+    </table>
+  </body>
+</html>

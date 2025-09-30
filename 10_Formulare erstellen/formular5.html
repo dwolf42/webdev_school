@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+  	<meta charset="utf-8">
+    <title>Kontrollkästchen und Optionsfelder</title>
+    <link rel="Stylesheet" href="stylesheets/vallorastyles.css">
+  </head>
+
+  <body>
+    <h1>Hotel Vallora</h1>
+  	<form action="mailto:irgendwer@mein.web" method="post" enctype="text/plain">
+   		<h2>Sie möchten ihr Fahrrad mit folgender Ausstattung:</h2>
+			<input type="checkbox" name="Ausstattung" checked value="27Gang" id="27Gang"><label for="27Gang">27-Gang-Schaltung</label>
+			<input type="checkbox" name="Ausstattung" value="Gelsattel" id="Gelsattel"> <label for="Gelsattel">Gelsattel</label>
+			<input type="checkbox" name="Ausstattung" value="Staender" id="Staender"> <label for="Staender">Ständer</label>
+
+			<h2>Ihr Fahrrad soll folgende Farbe haben:</h2>
+			<input type="radio" name="Farbe" value="rot" id="rot" checked> <label for="rot">rot</label>
+			<input type="radio" name="Farbe" value="blau" id="blau"> <label for="blau">blau</label>
+			<input type="radio" name="Farbe" value="schwarz" id="schwarz"> <label for="schwarz">schwarz</label>
+
+    	<p>
+        <input type="submit" name="Abschicken" value="Abschicken">
+        <input type="reset" name="Resetbutton" value="Auswahl zurücksetzen">
+      </p>
+  	</form>
+  </body>
+</html>

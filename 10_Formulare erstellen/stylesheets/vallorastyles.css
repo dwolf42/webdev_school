@@ -1,0 +1,5 @@
+body   	{font-family: Arial; color: #003366; font-size: 1em; }
+h1, h2 	{color: #339966; }
+h1     	{font-size: 1.5em; border-bottom: 1px solid #339966; }
+h2     	{font-size: 1.25em; }
+label {display: block;}

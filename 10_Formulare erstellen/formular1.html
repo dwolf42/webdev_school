@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+      <meta charset="utf-8">
+    	<title>Formular zur Dateneingabe</title>
+      <link rel="Stylesheet" href="stylesheets/vallorastyles.css">
+   </head>
+
+   <body>
+    <h1>Hotel Vallora</h1>
+    <form action="mailto:name@adresse.de" method="post" enctype="text/plain">
+      <label>Vorname: <input type="text" name="Vorname" placeholder="Vorname eingeben"></label>
+      <label>Name: <input type="text" name="Name" size="23"></label>
+      <label>E-Mail: <input type="email" name="EMail" value="name@adresse.de"></label>
+      <label>Postleitzahl: <input type="text" name="PLZ" pattern="^(?:[Dd]\s*[-–—]?\s*)?[0-9]{5}$"></ label>
+      <label>Password: <input type="password" name="Passwort"></label>
+      <p><button type="submit" name="Abschicken" value="Absenden">Absenden</button></p>
+     </form>
+  </body>
+</html>
