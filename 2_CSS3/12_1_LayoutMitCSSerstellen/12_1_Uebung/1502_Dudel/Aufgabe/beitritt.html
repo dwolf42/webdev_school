@@ -1,0 +1,91 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Beitritt</title>
+	<link rel="stylesheet" href="layout.css">
+	<style type="text/css">
+		
+	</style>
+</head>
+
+<body>
+<header> <h1>Dudelsackverein Karlsruhe</h1> </header>
+<nav>
+	<h2>Navigation</h2>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="Mitglied.html">Wer macht mit</a></li>
+		<li><a href="Chronik.html">Was war los</a></li>
+		<li><a href="Planung.html">Was is bald los</a></li>
+		<li><a href="beitritt.html#">Beitrittsformular</a></li>
+	</ul>
+</nav>
+<main>
+  <h4>Hiermit erkläre ich meinen Beitritt zum karlsruher Dudelsackverein</h4>
+  <form method="POST">
+        <fieldset id ="personalData">
+          <legend>Angaben zur Person</legend>
+			<label for="Vorname"    class="col1">Vorname:</label>
+            <input id ="Vorname"    class="col2"    type="text" name="Vorname">
+			<label for="Nachname"   class="col3">Nachname:</label>
+            <input id ="Nachname"   class="col4"    type="text" name="Nachname">
+			<label for="Strasse"      class="col1">Strasse:</label>
+			<input id ="Strasse"      class="col2"    type="text" name="Strasse">
+			<label for="HausNr"       class="col3">HausNr:</label>
+			<input id ="HausNr"       class="col4"    type="text" name="HausNr">
+			<label for="PLZ"          class="col1">PLZ:</label>
+			<input id ="PLZ"          class="col2"    type="text" name="PLZ">
+			<label for="Wohnort"      class="col3">Wohnort:</label>
+			<input id ="Wohnort"      class="col4"    type="text" name="Wohnort">
+			<label for="Geburtsdatum" class="col1">Geburtsdatum:</label>
+			<input id ="Geburtsdatum" class="col2"    type="date" name="Geburtsdatum">
+        </fieldset><br>
+        <fieldset id ="membership">
+          <legend>Angaben zur Mitgliedschaft</legend>
+			<label for="mitgliedsart" class="col12">Art der Mitgliedschaft:</label>
+			<select id="mitgliedsart" class="col34" size="1">
+				<option>Einzelmitglied</option>
+				<option>ermäßtes Mitglied</option>
+				<option>Familienmitglied</option>
+			</select>
+			<label for="mitgliedsart" class="col12">Art der Beitragszahlung:</label>
+			<span class="col34">
+			<input id ="einzug" name="zahlungsart" type="radio" value="einzug">
+			<label for="einzug" >Einzugsermächtigung</label></span>
+			<span class="col34">
+			<input id ="einzug" name="zahlungsart" type="radio" value="ueberw">
+			<label for="einzug" >Überweisung</label></span>
+			<span class="col34">
+			<input id ="einzug" name="zahlungsart" type="radio" value="paypal">
+			<label for="einzug" >paypal</label></span><br>
+			<label for="mitgliedsart" class="col12">Gewünschte Gruppierungen:</label>
+			<span class="col34">
+			<input id ="kammer"     type="checkbox" value="kammer">
+			<label for="kammer">    Kammerorchester</label></span>
+			<span class="col34">
+			<input id ="Sinfo"      type="checkbox" value="Sinfo">
+			<label for="Sinfo">     Sinphonieorchester</label></span>
+			<span class="col34">
+			<input id ="band"       type="checkbox" value="band">
+			<label for="band">      Band</label></span>
+			<span class="col34">
+			<input id ="bigband"    type="checkbox" value="bigband">
+			<label for="bigband">   Big Band</label></span>
+			<span class="col34">
+			<input id ="corps"      type="checkbox" value="corps">
+			<label for="corps">     Musikcorps</label></span>
+        </fieldset><br>
+ 
+        <input type="submit" name="submitButton" value="Abschicken"> </td>
+		<input type="reset"  name="resetButton"  value="Zurücksetzen"> </td>
+  </form>
+</main>
+<aside id="news">
+	<h2>Aktuell</h2>
+	<p>Konzert am kommenden Samstag</p>
+</aside>
+<footer>   <!-- <a href="#kontakt.html">Kontakt</a>  -->
+	<p>Dudelsackverein Karlsruhe</p>
+</footer>
+</body>
+</html>

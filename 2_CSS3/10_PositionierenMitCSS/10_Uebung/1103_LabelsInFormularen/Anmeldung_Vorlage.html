@@ -1,0 +1,47 @@
+<!DOCTYPE html>                           <!-- HTML5-Dokument -->
+<html lang="de">                          <!-- Sprache: Deutsch -->
+  <head>                                  <!-- Start des Kopfes -->
+    <meta charset="utf-8">                <!-- Zeichenkodierung -->
+    <meta name="keywords" content="Hertz, Schule">
+    <meta name="author"   content="Heinrich Hertz">
+    <link rel="stylesheet" type="text/css" 
+          href="style.css">
+    <title> Heinrich-Hertz-Schule </title>
+    <style type="text/css">
+ 		.eingabeFeld {
+			width: 10em;
+		}
+    </style>
+  </head>                                 <!-- Ende des Kopfes -->
+  
+  <body>                     <!-- Start des Rumpfes -->
+    <main>  
+      <h1>Aufnahmebogen für Schüler der Heinrich-Hertz-Schule</h1>
+      <form action="???">
+        <fieldset>
+          <legend>Angaben zur Person</legend>
+			<label  class="left"        for="Vorname">    Vorname:</label>
+            <input  class="eingabeFeld" id ="Vorname"     name="Vorname"      type="text"><br>
+			<label  class="left"        for="Nachname">   Nachname:</label>
+            <input  class="eingabeFeld" id ="Nachname"    name="Nachname"     type="text"><br>
+			<label  class="left"        for="geschlecht"> Geschlecht:</label>
+            <select class="eingabeFeld" id="geschlecht">
+                <option value="auswahl1">Weiblich</option>
+                <option value="auswahl2">Männlich</option>
+            </select><br>
+			<label class="left"        for="Geburtsdatum">Geburtsdatum:</label>
+			<input class="eingabeFeld" id ="Geburtsdatum" name="Geburtsdatum" type="date"><br>
+			<label class="left"        for="Strasse">     Strasse:</label>
+			<input class="eingabeFeld" id ="Strasse"      name="Strasse"      type="text"><br>
+			<label class="left"        for="PLZ">         PLZ:</label>
+			<input class="eingabeFeld" id ="PLZ"          name="PLZ"          type="text"><br>
+			<label class="left"        for="Wohnort">     Wohnort:</label>
+			<input class="eingabeFeld" id ="Wohnort"      name="Wohnort"      type="text"><br>
+        </fieldset>
+        <br>
+        <button type="submit">Absenden</button>
+      </form>
+    </main>
+  </body>                     <!-- Ende des Rumpfes -->
+  
+</html>

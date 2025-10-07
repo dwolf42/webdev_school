@@ -1,0 +1,58 @@
+body {
+	font-family: Calibri, Helvetica, Arial, Geneva, sans-serif;
+	background-color: #ddd;
+}
+a#homeLink {
+	background-color: #4e95dc;
+	padding: 0.5em;
+}
+h1#title {
+	background-color: #eee;
+	padding: 0.5em;
+}
+nav {
+	background-color: #5fa6ed;
+}
+main {
+	background-color: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 40em;
+	margin: 1em auto;
+}
+
+
+/* Layout per CSS-Grid
+   ========================================= */
+
+
+a#homeLink {
+  display: block; /* Damit der Link auf kleinen Bildschirmen ohne Grid als Block dargestellt wird */
+  grid-area: homeLink;
+}
+h1#title {
+  grid-area: title;
+  margin:0;
+}
+
+main {
+  grid-area: content;
+}
+
+nav {
+  grid-area: navigation;
+}
+
+@media screen and (min-width: 30em) {
+  body {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas:
+		"homeLink     title     title"
+		"navigation   content   content";
+  }
+}

@@ -1,0 +1,13 @@
+body { font: 10pt Georgia,Verdana,Arial,helvetica,sans-serif;
+       color: black;
+     }
+
+h1 {	color: #554FA0;
+      font-size:18pt;
+	background-color: #EEECF6;
+	background-position: center left;
+	padding: 7px;
+	border: dotted 1px #D6CCBD;
+	border-right: 0;
+	border-left: 0;
+   }

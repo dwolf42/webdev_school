@@ -1,0 +1,12 @@
+body { font: 14px/20px Verdana,Arial,helvetica,sans-serif;
+       color: #333;
+     }
+
+h2 {	font-weight:900;
+	color:#960;
+      background-color:#cc3;
+      font-size:28pt;
+	padding: 7px;
+ 	border-bottom: solid 1px black;
+      margin:0px 0px 15px 0px;
+   }
