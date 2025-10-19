@@ -1,46 +1,31 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>  
-  	<meta charset="utf-8">
-  	<title>Hotel Vallora - Newsletter</title>
-  	<link rel="stylesheet" type="text/css" href="../stylesheets/vallorastyles.css">
-  </head>
+<head>
+    <meta charset="utf-8">
+    <title>Hotel Vallora - Newsletter</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/vallorastyles.css">
+</head>
 
-  <body>
-	  <h1>Anmeldung zum Newsletter des Hotels Vallora</h1>
+<body>
+<h1>Anmeldung zum Newsletter des Hotels Vallora</h1>
 
-     <form id="Anmeldeformular" action="mailto:mail@example.com"
-     method="POST"
-     enctype="text/plain" target="Ziel">
+<form id="Anmeldeformular" action="mailto:mail@example.com"
+      method="POST"
+      enctype="text/plain" target="Ziel">
 
-         <p><label>Vorame:
-             <input
-                 type="text"
-                 id="Vornanme"
-                 name="Vorname"
-                 size="27"
-             >
-         </label>
-         </p>
+    <p><label for="vorname">Vorname:</label>
+        <input type="text" id="vorname" style="width: 220px"></p>
 
-         <label>Nachname:
-            <input
-                type="text"
-                id="Nachname"
-                name="Nachname"
-                size="27"
-            >
-         </label>
+    <p><label for="nachname">Nachname:</label>
+        <input type="text" id="nachname" style="width: 220px"></p>
 
+    <p><label for="email">E-Mail-Adresse:</label>
+        <input type="email" id="email" style="width: 220px"></p>
 
-     </form>
+<!--page 9: 10.3 Auswahllisten-->
 
+</form>
 
-
-
-
-
-
-  	<p><a href="../index.html">Zurück zur Startseite</a></p>
-  </body>
+<p><a href="../index.html">Zurück zur Startseite</a></p>
+</body>
 </html>
