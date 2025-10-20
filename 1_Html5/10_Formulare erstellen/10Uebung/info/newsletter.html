@@ -13,16 +13,33 @@
       method="POST"
       enctype="text/plain" target="Ziel">
 
-    <p><label for="vorname">Vorname:</label>
+    <p><label for="vorname">Vorname: </label>
         <input type="text" id="vorname" style="width: 220px"></p>
-
-    <p><label for="nachname">Nachname:</label>
+    <p><label for="nachname">Nachname: </label>
         <input type="text" id="nachname" style="width: 220px"></p>
+    <p><label for="email">E-Mail-Adresse: </label>
+        <input type="text" id="email" style="width: 220px"></p>
 
-    <p><label for="email">E-Mail-Adresse:</label>
-        <input type="email" id="email" style="width: 220px"></p>
+    <p><label for="list">Wie sind Sie auf unser Hotel aufmerksam geworden?<br></label>
+        <select name="list" id="list" size="4">
+            <option value="Freunde">Freunde</option>
+            <option value="Zeitschrift">Zeitschrift</option>
+            <option value="Internet">Internet</option>
+            <option value="Werbung">Werbung</option>
+        </select>
+    </p>
 
-<!--page 9: 10.3 Auswahllisten-->
+    <p><label for="rdio1">Wann haben Sie Ihren nächsten Urlaub geplant?<br></label></p>
+    <p><input type="radio" id="rdio1" name="radio" value="1">
+        <label for="rdio1">in ca. 1 - 3 Monaten</label><br>
+        <input type="radio" id="rdio2" name="radio" value="2">
+        <label for="rdio2">in ca. 6 Monaten</label><br>
+        <input type="radio" id="rdio3" name="radio" value="3">
+        <label for="rdio3">in diesem Jahr nicht mehr</label><br></p>
+
+    <p><label for="field">Wenn sie uns etwas mitteilen möchten, so finden Sie hier Platzu dafür:</label></p>
+    <textarea name="field" rows="5" cols="80"></textarea>
+
 
 </form>
 
