@@ -21,11 +21,14 @@ nav {
 main {
 	background-color: #fff;
 }
+aside {
+    background-color: #fff;
+}
 
-@media screen and (min-width:40em) {
+@media screen and (min-width:50em) {
   body {
     display: table;
-    width: 40em;
+    width: 50em;
   }
   h1, #container {
     display:table-row;
