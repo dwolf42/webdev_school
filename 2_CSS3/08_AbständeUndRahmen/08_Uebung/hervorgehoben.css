@@ -10,3 +10,8 @@ h2 {	font-weight:900;
  	border-bottom: solid 1px black;
       margin:0px 0px 15px 0px;
    }
+.box {
+	width: 10%;
+	position: relative;
+	left: 30em;
+}
