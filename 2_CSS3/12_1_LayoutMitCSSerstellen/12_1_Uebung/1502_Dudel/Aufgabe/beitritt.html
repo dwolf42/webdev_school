@@ -4,6 +4,57 @@
 	<title>Beitritt</title>
 	<link rel="stylesheet" href="layout.css">
 	<style type="text/css">
+		h1 {
+			grid-area: title;
+			background-color: greenyellow;
+			border-color: grey;
+			border-style: solid;
+			border-width: 2px;
+			text-align: center;
+			padding: 20px;
+			margin: 0px;
+
+		}
+		nav {
+			grid-area: navigation;
+			background-color: mediumseagreen;
+			border-color: grey;
+			border-style: solid;
+			border-width: 2px;
+			text-align: left;
+			padding: 10px;
+			margin: 0px;
+		}
+		main {
+			grid-area: content;
+			padding: 20px;
+			margin: 0px;
+		}
+		aside {
+			grid-area: side;
+			background-color: mediumseagreen;
+			border-color: grey;
+			border-style: solid;
+			border-width: 2px;
+			text-align: left;
+			padding: 10px;
+		}
+		footer {
+			grid-area: foot;
+			margin: 0px;
+			padding: 10px;
+		}
+		body {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 10px;
+			grid-template-areas:
+
+			"title title title"
+			"navigation content side "
+			"foot foot foot";
+
+		}
 		
 	</style>
 </head>
