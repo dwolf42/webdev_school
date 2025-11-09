@@ -1,0 +1,35 @@
+body{
+	background-color: #ddd;
+}
+#uebersicht {
+	font-family: Calibri, Helvetica, Arial, Geneva, sans-serif;
+	margin: 1em auto;
+	max-width: 560px;
+	background-color: #ddd;
+}
+h1 {
+	text-align: center;
+	font-size:40px;
+}
+.feld {
+	color: black;
+	background-color:#ff6;
+	position: relative;   
+	float: left;
+	height: 120px;
+	width:120px;
+	margin: 10px;
+}
+.inhalt{
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* Zentriert den Text */
+}
+
+@media screen and (min-width:560px) {
+  #uebersicht {
+
+  }
+}

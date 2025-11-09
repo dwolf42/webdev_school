@@ -1,0 +1,49 @@
+body    { background-color:#880000;}
+header	{ background-color:#dd4400; }
+nav   	{ background-color:#ee7700; }
+main  	{ background-color:#ff9900; }
+aside 	{ background-color:#ffbb00; }
+footer	{ background-color:#ffff00; }
+
+h1, h3 {
+	text-align: center;
+}
+
+h1 {
+	font-size: 30px;
+	
+}
+
+h3 {
+	font-size: 25px;
+}
+
+.hhs {
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+
+body, main, nav, aside,footer {
+	border: 2px solid black;
+	padding: 5px;
+	margin: 5px;
+}
+
+header {
+	padding: 80px;
+	margin: 20px;
+}
+
+article {
+	line-hight: 1.5em;
+}
+
+footer {
+	font-size: large;
+	color: blue;
+	font-family: Arial;
+}
+
+a {
+	text-decoration: none;
+}
