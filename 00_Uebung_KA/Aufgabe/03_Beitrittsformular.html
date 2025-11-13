@@ -1,70 +1,92 @@
 <!DOCTYPE html>                           <!-- HTML5-Dokument -->
 <html lang="de">                          <!-- Sprache: Deutsch -->
-  <head>                                  
+<head>
     <meta charset="utf-8">                <!-- Zeichenkodierung -->
-    <link rel="stylesheet" type="text/css" 
+    <link rel="stylesheet" type="text/css"
           href="02_style.css">
     <title> Heinrich-Hertz-Schule </title>
     <style type="text/css">
-    <!--
-    -->
+        <!--
+        -->
     </style>
-  </head>                                 
-  
-  <body>                    
-    <header> 
-      <h1>Verein der Freunde der <span class="hhs"> Heinrich-Hertz-Schule </span></h1>    
-    </header>
-    <nav>
-      Navigation
-      <ul>
+</head>
+
+<body>
+<header>
+    <h1>Verein der Freunde der <span class="hhs"> Heinrich-Hertz-Schule </span></h1>
+</header>
+<nav>
+    Navigation
+    <ul>
         <li><a href="02_FoerdervereinHHS.html">home</a></li>
         <li><a href="03_Beitrittsformular.html">Anmeldung</a></li>
-      </ul>
-    </nav>                   
-    <main>
+    </ul>
+</nav>
+<main>
 
-		<!--- Fügen Sie hier das Formular ein --->
-	<form id="anmeldung" action="auswertung.php" method="POST">
-	<input
-		type="text"
-		id="myID"
-		name="myID"
-		size="12"
-		placeholder="lalala">
-		<br><br>
+    <!--- Fügen Sie hier das Formular ein --->
+    <form id="anmeldung" action="auswertung.php" method="POST">
+        <fieldset>
+            <legend>Angaben zur Person</legend>
+        <label for="myID">myID</label><br>
+        <input
+                type="text"
+                id="myID"
+                name="myID"
+                size="12"
+                placeholder="lalala">
+        <br><br>
 
-	<textarea name="textfeld" rows="10" cols="40" placeholder="~Input your Text here~"></textarea>
+        <h4>Mehrzeiliges Eingabefeld</h3>
+        <textarea name="textfeld" id="textfield" rows="10" cols="40" placeholder="~Input your Text here~"></textarea>
 
 
-		<br><br>
-----<br><br>
-		<label for="vorname">Vorname</label><br>
-		<input type="text" id="vorname" name="vorname"><br>
-		<label for="nachname">Nachname</label><br>
-		<input type="text" id="nachname" name="nachname"><br>
+        <br><br>
+        ----<br><br>
+        <label for="vorname">Vorname</label><br>
+        <input type="text" id="vorname" name="vorname" required><br>
+        <label for="nachname">Nachname</label><br>
+        <input type="text" id="nachname" name="nachname" required><br>
 
-		<label for="bday">Geburtsdatum</label><br>
-		<input type="date" name="bday"><br><br>
+        <label for="bday">Geburtsdatum</label><br>
+        <input type="date" id="bday" name="bday"><br><br>
 
-		<label for="email">Email-Adresse</label><br>
-		<input type="email" id="email" name="email" placeholder="email@provider"><br>
+        <label for="email">Email-Adresse</label><br>
+        <input type="email" id="email" name="email" placeholder="email@provider"><br>
+        </fieldset>
+<br><br>
+        <fieldset>
+           <legend>Informationen zur Beitragszahlung</legend>
+        <!--        Radio Buttons-->
 
-		<label style="color:blue">Select your favorite language:</label><br>
-		<input type="radio" id="html" name="fav_language" value="HTML">
-		<label for="html">HTML</label><br>
-		<input type="radio" id="java" name="fav_language" value="Java">
-		<label for="java">Java</label><br>
-		<input type="radio" id="css" name="fav_language" value="CSS">
-		<label for="css">CSS</label><br>
+        <label style="color:blue">Geben sie die gewünschte Art der Mitgliedschaft an</label>
+            <select name="artMitgliedschaft" id="artMitgliedschaft">
+                <option value="einzel">Einzelmitglied</option>
+                <option value="familie">Familienmitglied</option>
+                <option value="erm">Ermäßigt</option>
+            </select>
+            <br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="java" name="fav_language" value="Java">
+        <label for="java">Java</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
 
-		<br><br>
-		<input type="submit">
-		</form>
-    </main><br>
-    <footer>
-      Interessiert? Wir informieren Sie. 
-    </footer>
-  </body>                 
-  
+        </fieldset>
+
+        <p>
+            <button type="reset" name="reset" id="reset">Eingaben zurücksetzen</button>
+            <button type="submit" name="send" id="send" formnovalidate>Eingaben absenden</button></p>
+
+
+
+    </form>
+</main>
+<br>
+<footer>
+    Interessiert? Wir informieren Sie.
+</footer>
+</body>
+
 </html>
