@@ -8,6 +8,11 @@
     <style type="text/css">
         <!--
         -->
+        span {
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+        }
     </style>
 </head>
 
@@ -23,62 +28,64 @@
     </ul>
 </nav>
 <main>
-
+    <p>Stelle für Wert static:<span style="position: static; top:100px; left:200px;">Die Position: Static; Oben: 100 Pixel
+Links: 200 Pixel</span></p>
     <!--- Fügen Sie hier das Formular ein --->
     <form id="anmeldung" action="auswertung.php" method="POST">
         <fieldset>
             <legend>Angaben zur Person</legend>
-        <label for="myID">myID</label><br>
-        <input
-                type="text"
-                id="myID"
-                name="myID"
-                size="12"
-                placeholder="lalala">
-        <br><br>
+            <label for="myID">myID</label><br>
+            <input
+                    type="text"
+                    id="myID"
+                    name="myID"
+                    size="12"
+                    placeholder="lalala">
+            <br><br>
 
-        <h4>Mehrzeiliges Eingabefeld</h3>
-        <textarea name="textfeld" id="textfield" rows="10" cols="40" placeholder="~Input your Text here~"></textarea>
+            <label for="textfield" style="font-size: large">Mehrzeiliges Eingabefeld</label><br>
+                <textarea name="textfeld" id="textfield" rows="10" cols="40"
+                          placeholder="~Input your Text here~"></textarea>
 
 
-        <br><br>
-        ----<br><br>
-        <label for="vorname">Vorname</label><br>
-        <input type="text" id="vorname" name="vorname" required><br>
-        <label for="nachname">Nachname</label><br>
-        <input type="text" id="nachname" name="nachname" required><br>
+                <br><br>
+                ----<br><br>
+                <label for="vorname">Vorname</label><br>
+                <input type="text" id="vorname" name="vorname" required><br>
+                <label for="nachname">Nachname</label><br>
+                <input type="text" id="nachname" name="nachname" required><br>
 
-        <label for="bday">Geburtsdatum</label><br>
-        <input type="date" id="bday" name="bday"><br><br>
+                <label for="bday">Geburtsdatum</label><br>
+                <input type="date" id="bday" name="bday"><br><br>
 
-        <label for="email">Email-Adresse</label><br>
-        <input type="email" id="email" name="email" placeholder="email@provider"><br>
+                <label for="email">Email-Adresse</label><br>
+                <input type="email" id="email" name="email" placeholder="email@provider"><br>
         </fieldset>
-<br><br>
+        <br><br>
         <fieldset>
-           <legend>Informationen zur Beitragszahlung</legend>
-        <!--        Radio Buttons-->
+            <legend>Informationen zur Beitragszahlung</legend>
+            <!--        Radio Buttons-->
 
-        <label style="color:blue">Geben sie die gewünschte Art der Mitgliedschaft an</label>
+            <label style="color:blue">Geben sie die gewünschte Art der Mitgliedschaft an</label>
             <select name="artMitgliedschaft" id="artMitgliedschaft">
                 <option value="einzel">Einzelmitglied</option>
                 <option value="familie">Familienmitglied</option>
                 <option value="erm">Ermäßigt</option>
             </select>
             <br>
-        <input type="radio" id="html" name="fav_language" value="HTML">
-        <label for="html">HTML</label><br>
-        <input type="radio" id="java" name="fav_language" value="Java">
-        <label for="java">Java</label><br>
-        <input type="radio" id="css" name="fav_language" value="CSS">
-        <label for="css">CSS</label><br>
-
+            <label>Zahlungsart des Mitgliedsbeitrags</label><br>
+            <input type="radio" name="ueberweis" id="ueberweis">
+            <label for="ueberweis">Überweisung</label><br>
+            <input type="radio" name="last" id="last">
+            <label for="last" style="color:magenta; text-decoration: underline;">per Lastschrift</label><br>
+            <input type="radio" name="kred" id="kred">
+            <label for="kred">Kreditkarte</label><br>
         </fieldset>
 
         <p>
             <button type="reset" name="reset" id="reset">Eingaben zurücksetzen</button>
-            <button type="submit" name="send" id="send" formnovalidate>Eingaben absenden</button></p>
-
+            <button type="submit" name="send" id="send" formnovalidate>Eingaben absenden</button>
+        </p>
 
 
     </form>
