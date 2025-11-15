@@ -1,0 +1,75 @@
+<!DOCTYPE html>                           <!-- HTML5-Dokument -->
+<html lang="de">                          <!-- Sprache: Deutsch -->
+  <head>                                  
+    <meta charset="utf-8">                <!-- Zeichenkodierung -->
+    <link rel="stylesheet" type="text/css" 
+          href="style.css">
+    <title> Heinrich-Hertz-Schule </title>
+    <style type="text/css">
+
+    </style>
+  </head>                                 
+  
+  <body>                    
+    <header> 
+      <h1>Verein der Freunde der <span class="hhs"> Heinrich-Hertz-Schule </span></h1>    
+    </header>
+    <nav>
+      Navigation
+      <ul>
+        <li><a href="FoerdervereinHHS.html">home</a></li>
+        <li><a href="Beitrittsformular.html">Anmeldung</a></li>
+      </ul>
+    </nav>                   
+    <main>
+      <section>
+          <h3>Anmelde-Formular</h3>
+		<form method="post" action="ausertung.php">  
+          <fieldset>
+		  <legend>Angaben zur Person </legend>
+          <label class="input" for="vorname">Vorname</label> 
+          <br>
+          <input type="text" id="vorname" maxlength="30">
+          <br>
+          <label class="input" for="nachname">Nachname</label> 
+          <br>
+          <input type="text" id="nachname" maxlength="30">
+          <br>
+          <label class="gebdat" for="gebdat">Geburtsdatum</label> 
+          <br>
+          <input type="date" name="bday">
+          <br>
+          <label class="input" for="email">Email-Adresse</label>  
+          <br>
+          <input type="email" id="email"  maxlength="40" placeholder="email@provider">
+          <br>
+          </fieldset>
+          <br>
+          <fieldset>
+			<legend> Informationen zur Beitragszahlung </legend>
+               Geben Sie die gewünschte Art der Mitgliedschaft an 
+               <select name="mitgliedsart" size="1">
+                 <option>Einzelmitglied</option>
+                 <option>Familienmitglied</option>
+                 <option>Ermäßigt</option>
+               </select><br>
+            Zahlungsart des Mitgliedsbeitrags<br>
+            <input type="radio" id="ueberweis" name="ueberweis" value="ueberweis">
+            <label for="ohneHS">Überweisung</label><br> 
+            <input type="radio" id="lastschrift" name="lastschrift" value="lastschrift">
+            <label for="HS">per Lastschrift</label><br> 
+            <input type="radio" id="kreditkarte" name="kreditkarte" value="kreditkarte">
+            <label for="MR">Kreditkarte</label><br> 
+          </fieldset>
+          <br><br>
+          <button type="reset">Eingaben zurücksetzen</button>         
+          <button type="submit">Eingaben absenden</button>
+        </form>
+      </section>
+    </main><br>
+    <footer>
+      Interessiert? Wir informieren Sie. 
+    </footer>
+  </body>                 
+  
+</html>
